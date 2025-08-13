@@ -12,6 +12,7 @@ return {
       require "configs.lspconfig"
     end,
   },
+	{ "tpope/vim-fugitive", cmd = "G" },
 
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
