@@ -12,7 +12,24 @@ return {
       require "configs.lspconfig"
     end,
   },
-	{ "tpope/vim-fugitive", cmd = "G" },
+  {
+    "hrsh7th/nvim-cmp",
+    opts = function(_, conf)
+      local cmp = require "cmp"
+
+      local mappings = {
+        ["<Tab>"] = cmp.mapping.confirm {
+          behavior = cmp.ConfirmBehavior.Insert,
+          select = true,
+        },
+      }
+
+      conf.mapping = vim.tbl_deep_extend("force", conf.mapping, mappings)
+
+      return conf
+    end,
+  },
+  { "tpope/vim-fugitive", cmd = "G" },
 
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
