@@ -37,6 +37,8 @@ map("n", "<leader>gs", "<cmd> :above G<CR>", { desc = "git status" })
 map("n", "<leader>gl", "<cmd> :G log --oneline<CR>", { desc = "git log" })
 map("n", "<leader>dv", "<cmd> :DiffviewOpen<CR>", { desc = "diffview open" })
 map("n", "<leader>dc", "<cmd> :DiffviewClose<CR>", { desc = "diffview close" })
+map("n", "]c", "<cmd>Gitsigns next_hunk<CR>", { desc = "next git hunk" })
+map("n", "[c", "<cmd>Gitsigns prev_hunk<CR>", { desc = "previous git hunk" })
 
 -- Copilot mappings
 -- map("n", "<leader>cp", function() require("copilot.panel").open({ "bot", 0.3 }) end)
