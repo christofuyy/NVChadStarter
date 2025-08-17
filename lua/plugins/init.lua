@@ -25,6 +25,7 @@ return {
       }
 
       conf.mapping = vim.tbl_deep_extend("force", conf.mapping, mappings)
+      conf.mapping["<CR>"] = nil
 
       return conf
     end,
