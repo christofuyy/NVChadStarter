@@ -2,6 +2,8 @@ local options = {
   formatters_by_ft = {
     lua = { "stylua" },
     gdscript = { "gdformat" },
+    typescript = { "biome" },
+    typescriptreact = { "biome" },
     -- css = { "prettier" },
     -- html = { "prettier" },
   },
