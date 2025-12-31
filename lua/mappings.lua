@@ -26,7 +26,6 @@ map("n", "<C-s>", "<cmd> :Telescope live_grep <CR>", { desc = "Search for string
 map("n", "[d", vim.diagnostic.goto_prev, { desc = "Go to prev diagnostic" })
 map("n", "]d", vim.diagnostic.goto_next, { desc = "Go to next diagnostic" })
 map("n", "<leader>f", function() require("conform").format { lsp_fallback = true } end, { desc = "lsp formatting" })
-map("n", "<leader>rn", function() require("nvchad.renamer").open() end, { desc = "lsp rename" })
 map("n", "gd", vim.lsp.buf.definition, { desc = "lsp definition" })
 map("n", "K", vim.lsp.buf.hover, { desc = "lsp hover" })
 map("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "lsp code action" })
