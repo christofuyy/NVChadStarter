@@ -4,7 +4,7 @@ local options = {
     gdscript = { "gdformat" },
     typescript = { "biome" },
     typescriptreact = { "biome" },
-    -- css = { "prettier" },
+    css = { "biome" },
     -- html = { "prettier" },
   },
 
